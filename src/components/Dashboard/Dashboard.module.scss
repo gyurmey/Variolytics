@@ -1,0 +1,237 @@
+@import '../Partials-scss/config';
+
+*,
+*:before,
+*:after {
+    padding: 0;
+}
+
+.Dashboard {
+    display: flex;
+}
+
+.main2 {
+    background-color: white;
+    display: flex;
+}
+
+.DashboardMain {
+    width: 80vw;
+    height: 100vh;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.DashboardContent {
+    margin-top: 100px;
+}
+
+.DashboardTopic {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.filters {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.subIcon1 {
+    color: #f99e0c;
+    background-color: #f6e4c6;
+    border-radius: 10px;
+    padding: 10px;
+    float: left;
+    margin: 5px;
+}
+
+.sub1 {
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 3px 3px rgb(240, 240, 240), -1em 0 .4em rgb(242, 242, 241);
+}
+
+.subIcon2 {
+    color: #023d14;
+    background-color: #cbf3da;
+    border-radius: 10px;
+    padding: 10px;
+    float: left;
+    margin: 5px;
+}
+
+.sub2 {
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 3px 3px rgb(240, 240, 240), -1em 0 .4em rgb(242, 242, 241);
+}
+
+.subIcon3 {
+    color: #0c1cf9;
+    background-color: #c6cdf6;
+    border-radius: 10px;
+    padding: 10px;
+    float: left;
+    margin: 5px;
+}
+
+.sub3 {
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 3px 3px rgb(240, 240, 240), -1em 0 .4em rgb(242, 242, 241);
+}
+
+.subIcon4 {
+    color: #f90c0c;
+    background-color: #f6c6c6;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    float: left;
+}
+
+.sub4 {
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 3px 3px rgb(240, 240, 240), -1em 0 .4em rgb(242, 242, 241);
+}
+
+.filter1 {
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    margin-top: -15px;
+}
+
+.filter2 {
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    margin-top: -1px;
+}
+
+.filter3 {
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.filter4 {
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.filter5 {
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    margin-top: -10px;
+}
+
+.filter6 {
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    margin-top: -10px;
+}
+
+.search {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg");
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-color: lightgrey;
+}
+
+::placeholder {
+    color: rgb(74, 73, 73);
+    opacity: 1;
+    /* Firefox */
+}
+
+.third {
+    display: flex;
+}
+
+.tree {
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    height: 50vh;
+    margin-left: 10px;
+    box-shadow: 3px 3px rgb(240, 240, 240), -1em 0 .4em rgb(242, 242, 241);
+    overflow: hidden;
+    overflow-y: auto;
+    margin-right: 20px;
+}
+
+.filterTopic1 {
+    margin-top: 10px;
+}
+
+.filterTopic2 {
+    margin-top: 10px;
+}
+
+.chart {
+    width: 60vw;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    height: 50vh;
+    margin-left: 10px;
+    box-shadow: 3px 3px rgb(240, 240, 240), -1em 0 .4em rgb(242, 242, 241);
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-bottom: 3px solid blue;
+}
+
+@include media-tablet {
+    .legend {
+        display: none;
+    }
+}
+
+@include media-web {
+    .legend {
+        width: 250px;
+        float: right;
+        position: absolute;
+        right: 0;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+        margin-right: 150px;
+        margin-top: 50px;
+        height: 200px;
+    }
+}

@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {I18nextProvider} from "react-i18next";
+import i18next from "i18next";
+import './App.scss';
+import './i18n'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <React.Suspense fallback="loading">
     <App />
+    </React.Suspense>
   </React.StrictMode>
 );
 
